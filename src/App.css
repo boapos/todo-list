@@ -30,7 +30,7 @@ form button {
 }
 form button {
   color: #17c0eb;
-  background: #f7fffe;
+  background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -52,7 +52,7 @@ form button:hover {
 .todo {
   margin: 0.5rem;
   background: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: black;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@ select {
 
 /* Custom Select */
 .select {
-  margin: 1rem;
+  margin-left: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -139,3 +139,13 @@ select {
   transform: scale(1.5);
 }
 */
+@media only screen and (max-width: 400px) {
+  .select {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  form {
+    flex-wrap: wrap;
+  }
+}
